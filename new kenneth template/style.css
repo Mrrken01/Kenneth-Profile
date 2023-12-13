@@ -1,0 +1,815 @@
+@font-face {
+    font-family: poppins;
+    src: url(Poppins-Medium.otf);
+}
+
+*{
+    font-family: poppins;
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-color: black;
+}
+
+header{
+    background-color: black;
+    height: 60vh;
+    margin: 30px 0;
+}
+
+.logo img{
+    height: 30px;
+    margin-left: 100px;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo nav{
+    margin-right: 20px;
+}
+
+.logo nav li{
+    display: inline;
+}
+
+.logo nav li a{
+    text-decoration: none;
+    color: white;
+    transition: .7s;
+}
+
+.logo nav li a:hover{
+    color: yellow;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.logo nav li{
+    margin-right: 10px;
+}
+
+
+
+.profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile .im{
+    width: 30%;
+    height: 30%;
+    /* z-index: -1; */
+}
+
+.im img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-display{
+   width: 50%;
+   height: 20%; 
+}
+
+.text1 p{
+    color: red;
+    display: block;
+    width: 100%;
+    break-inside: avoid;
+}
+
+.text1 h1{
+    color: #fff;
+}
+
+.text1{
+    display: block;
+    width: 100%;
+}
+
+.lorem
+ {
+    color: #fff;
+}
+
+.lorem p
+{
+    font-size: 13px;
+    line-height: 30px;
+}
+
+.lorem button{
+    padding: 13px;
+    border: none;
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+
+}
+
+.span-display{
+    display: flex;
+    margin-left: 80px;
+}
+
+.fix{
+    z-index: -9;
+}
+
+.span-div{
+    height: 77vh;
+    border: 1px solid;
+    display: block;
+    background-color: rgb(48, 47, 47);
+    width: 50%;
+    padding: 20px;
+    z-index: 5;
+}
+
+.display-flex{
+    padding: 10px;
+    width: fit-content;
+    margin: 10px;
+    margin-top: 60px;
+    background-color: rgb(100, 100, 100);
+}
+
+.display-flex .img{
+    width: 100%;
+}
+
+.display-flex img{
+    margin: 10px;
+}
+
+
+.display-flex h1{
+    color: white;
+    margin: 5px;
+    text-align: left;
+}
+
+.span-display .display-flex p{
+    color: white;
+    margin: 5px;
+    width: 220px;
+    text-align: left;
+}
+
+.h1-text h1{
+    color: red;
+    margin: 0;
+    text-align: center;
+    font-size: 60px;
+}
+
+.h1-text h2{
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.h1-text{
+    margin-left: 120px;
+    margin-top: 30px;
+    width: fit-content;
+    display: flex;
+}
+
+.cover{
+    display: flex;
+}
+
+.doubles h2{
+    text-align: center;
+    font-size: 25px;
+}
+
+.doubles{
+    background-color: rgb(22, 22, 22);
+    width: 20vw;
+    margin: 5px;
+    height: 12vh;
+    padding: 5px;
+}
+
+.doubles h1{
+    font-size: 25px;
+    text-align: center;
+    word-spacing: 2px;
+}
+
+.p{
+    display: block;
+    margin-left: 60px;
+}
+.h1-color{
+        margin-top: 40px;
+        cursor: auto;
+    }
+
+.h1-color h1{
+    color: white;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.h1-color .text-align{
+    color: white;
+    width: 600px;
+}
+
+.h1-color a{
+    display: block;
+    width: 100%;
+}
+
+.h1-color a button{
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: red;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.h1-color a button:hover{
+    width: fit-content;
+    cursor: cell;
+}
+
+
+
+/* media-queries */
+
+
+ @media  all and (min-width: 414px) {
+
+    .body
+    {
+        text-transform: capitalize;
+        scroll-behavior: smooth;
+    }
+
+    .logo img{
+        display: block;
+        margin: auto;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .logo nav li{
+        display: block;
+    }
+
+    .logo nav{
+        display: flex;
+        margin: auto;
+    }
+    
+    .logo{
+        display: block;
+    }
+    
+    .logo nav{
+        display: block;
+        width: 100%;
+        margin: auto;
+        display: flex;
+    }
+    
+    .nav
+    {
+        display: block;
+        margin: auto;
+        margin-left: 60px;
+    }
+    
+    .profile
+    {
+        content: "";
+        transform: rotatey(180deg);
+        display: flex;
+        margin-top: 40px;
+    }
+
+    .span-display
+    {
+        display: block;
+        text-align: center;
+        margin: auto;
+        margin-left: 35px;
+        margin-top: -80px;
+    }
+
+    .span-display .display-flex
+    {
+        width: fit-content;
+        text-align: center;
+        padding: 0;
+        border-radius: 20px;
+        padding: 15px;
+        height: fit-content;
+    }
+    
+    .profile .im{
+        display: none;
+    }
+    
+    .profile .profile-display
+    {
+        transform: rotateY(-180deg);
+        text-align: center;
+        margin: auto;
+    }
+
+    .profile .profile-display .text1 h1
+    {
+        text-align: center;
+        color: white;
+    }
+    
+    .profile-display .text1 p
+    {
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .logo nav li a{
+        display: inline-block;
+        font-size: 13px;
+    }
+
+    .im{
+        display: block;
+    }
+
+    .im h3{
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    
+    .im h1{
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .lorem{
+        margin-left: 0;
+    }
+
+    .span-div
+    {
+        background-color: transparent;
+    }
+
+    .h1-text
+    {
+        display: block;
+        margin: auto;
+        margin-left: -20px;
+    }
+
+    .doubles
+    {
+        width: 100%;
+        margin: 3px;
+        text-transform: capitalize;
+    }
+
+    .h1-color
+    {
+        display: block;
+        width: 100%;
+    }
+
+    .h1-color .text-align
+    {
+        width: 350px;
+        text-align: center;
+    }
+
+    .h1-color a
+    {
+        display: block;
+        width: 90vw;
+        margin: auto;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+
+    .h1-color a button
+    {
+        display: block;
+        margin: auto;
+        border: none;
+        margin-left: 150px;
+    }
+
+    .h1-text .h1{
+        display: block;
+        margin: auto;
+        margin-left: 60px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .h1-color .text-align h1
+    {
+        text-align: center;
+    }
+
+    .h1-color .text-align p
+    {
+        display: block;
+        width: 3vw;
+    }
+
+}
+
+
+@media all and (max-width: 393px){
+
+    .body
+    {
+        text-transform: capitalize;
+        scroll-behavior: smooth;
+    }
+
+    .logo img{
+        display: block;
+        margin: auto;
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo nav li{
+        display: flex;
+    }
+
+    .logo nav{
+        display: flex;
+        margin: auto;
+    }
+    
+    .logo{
+        display: block;
+    }
+    
+    .logo nav{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .nav
+    {
+        display: block;
+        margin: auto;
+        margin-left: 40px;
+    }
+    
+    .profile
+    {
+        content: "";
+        transform: rotatey(180deg);
+        display: flex;
+    }
+
+    .span-display
+    {
+        display: block;
+        text-align: center;
+        margin: auto;
+        margin-left: 35px;
+        margin-top: -50px;
+    }
+
+    .span-display .display-flex
+    {
+        width: fit-content;
+        text-align: center;
+        padding: 0;
+        border-radius: 20px;
+        padding: 15px;
+        height: fit-content;
+    }
+    
+    .profile .im{
+        display: none;
+    }
+    
+    .profile .profile-display
+    {
+        transform: rotateY(-180deg);
+        text-align: center;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .profile .profile-display .text1 h1
+    {
+        text-align: center;
+        color: white    ;
+    }
+    
+    .profile-display .text1 p
+    {
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .logo nav li a{
+        display: inline-block;
+        font-size: 13px;
+    }
+
+    .im{
+        display: block;
+    }
+
+    .im h3{
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    
+    .im h1{
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .lorem{
+        margin-left: 0;
+    }
+
+    .span-div
+    {
+        background-color: transparent;
+    }
+
+    .h1-text
+    {
+        display: block;
+        margin: auto;
+        margin-left: -20px;
+    }
+
+    .doubles
+    {
+        width: 100%;
+        margin: 3px;
+        text-transform: capitalize;
+    }
+
+    .h1-color
+    {
+        display: block;
+        width: 100%;
+    }
+
+    .h1-color .text-align
+    {
+        width: 350px;
+        text-align: center;
+    }
+
+    .h1-color a
+    {
+        display: block;
+        width: 90vw;
+        margin: auto;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+
+    .h1-color a button
+    {
+        display: block;
+        margin: auto;
+        border: none;
+        margin-left: 130px;
+        margin-top: 10px;
+    }
+
+    .h1-text .h1{
+        display: block;
+        margin: auto;
+        margin-left: 60px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: red;
+    }
+
+    .h1-color .text-align h1
+    {
+        text-align: center;
+    }
+
+    .h1-color .text-align p
+    {
+        display: block;
+        width: 3vw;
+    }
+
+
+
+}
+
+
+
+@media all and (max-width: 375px) {
+    
+    .body
+    {
+        text-transform: capitalize;
+        scroll-behavior: smooth;
+    }
+
+    .logo img{
+        display: block;
+        margin: auto;
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo nav li{
+        display: flex;
+    }
+    
+    .logo{
+        display: block;
+    }
+    
+    .logo nav{
+        display: flex;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    
+    .nav
+    {
+        display: block;
+        margin: auto;
+        margin-left: 40px;
+    }
+    
+    .profile
+    {
+        content: "";
+        transform: rotatey(180deg);
+        display: flex;
+    }
+
+    .span-display
+    {
+        display: block;
+        text-align: center;
+        margin: auto;
+        margin-left: 35px;
+        margin-top: 50px;
+    }
+
+    .span-display .display-flex
+    {
+        width: fit-content;
+        text-align: center;
+        padding: 0;
+        border-radius: 20px;
+        padding: 15px;
+        height: fit-content;
+    }
+    
+    .profile .im{
+        display: none;
+    }
+    
+    .profile .profile-display
+    {
+        transform: rotateY(-180deg);
+        text-align: center;
+        margin: auto;
+    }
+
+    .profile .profile-display .text1 h1
+    {
+        text-align: center;
+        color: white    ;
+    }
+    
+    .profile-display .text1 p
+    {
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .logo nav li a{
+        display: inline-block;
+        font-size: 13px;
+    }
+
+    .im{
+        display: block;
+    }
+
+    .im h3{
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    
+    .im h1{
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .lorem{
+        margin-left: 0;
+    }
+
+    .span-div
+    {
+        background-color: transparent;
+    }
+
+    .h1-text
+    {
+        display: block;
+        margin: auto;
+        margin-left: -20px;
+    }
+
+    .doubles
+    {
+        width: 100%;
+        margin: 3px;
+        text-transform: capitalize;
+    }
+
+    .h1-color
+    {
+        display: block;
+        width: 100%;
+    }
+
+    .h1-color .text-align
+    {
+        width: 350px;
+        text-align: center;
+    }
+
+    .h1-color a
+    {
+        display: block;
+        width: 90vw;
+        margin: auto;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+
+    .h1-color a button
+    {
+        display: block;
+        margin: auto;
+        border: none;
+        margin-left: 130px;
+    }
+
+    .h1-text .h1{
+        display: block;
+        margin: auto;
+        margin-left: 60px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .h1-color .text-align h1
+    {
+        text-align: center;
+    }
+
+    .h1-color .text-align p
+    {
+        display: block;
+        width: 3vw;
+    }
+
+
+}
